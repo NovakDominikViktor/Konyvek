@@ -10,7 +10,7 @@ function KonyvekList() {
     }, []);
 
     const fetchData = () => {
-        fetch("https://localhost:5001/Konyv")
+        fetch("https://localhost:7017/Konyv")
             .then((response) => response.json())
             .then((konyvek) => setKonyvek(konyvek))
             .catch((error) => console.log(error));

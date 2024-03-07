@@ -19,7 +19,7 @@ function UjKonyvFelvetel() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("https://localhost:5001/Konyv", {
+            const response = await fetch("https://localhost:7017/Konyv", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

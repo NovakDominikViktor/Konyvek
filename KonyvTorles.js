@@ -12,7 +12,7 @@ function KonyTorles() {
 
     const fetchData = async () => {
         try {
-            const response = await fetch(`https://localhost:5001/Konyv/${id}`);
+            const response = await fetch(`https://localhost:7017/Konyv/${id}`);
             const data = await response.json();
             setBook(data);
         } catch (error) {
@@ -22,7 +22,7 @@ function KonyTorles() {
 
     const handleDelete = async () => {
         try {
-            const response = await fetch(`https://localhost:5001/Konyv/${id}`, {
+            const response = await fetch(`https://localhost:7017/Konyv/${id}`, {
                 method: "DELETE"
             });
             if (response.ok) {

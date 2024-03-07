@@ -18,7 +18,7 @@ function KonyModositas() {
 
     const fetchData = async () => {
         try {
-            const response = await fetch(`https://localhost:5001/Konyv/${id}`);
+            const response = await fetch(`https://localhost:7017/Konyv/${id}`);
             const data = await response.json();
             setFormData(data);
         } catch (error) {
@@ -34,7 +34,7 @@ function KonyModositas() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`https://localhost:5001/Konyv/${id}`, {
+            const response = await fetch(`https://localhost:7017/Konyv/${id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
